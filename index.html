@@ -682,31 +682,16 @@ domain specifics. This step significantly simplifies estimating the mapping betw
 the learner and expert domains and hence facilitates end-to-end learning. We
 demonstrate successful transfer of policies between considerably different domains,
 without extra supervision such as additional demonstrations, and in situations
-where other methods fail.</p><h1 id="c1668975-2cd9-4c17-aef7-9ec2a12cd963" class="">Results in X-Magical</h1><figure id="4dc7bd0e-d6b8-452d-b2a8-caa874a513a8"><div class="source"><a href="Learn%20what%20matters%20cross-domain%20imitation%20learning%20d34e0ce0671f48c6bbca8ba34a65e24c/XIRL_results.mov">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61155649-2610-4145-8ffc-bb34a0339898/XIRL_results.mov</a></div></figure><p id="8c2ddf72-3596-4c75-b114-94f0ee2d0c96" class="">
-</p><h1 id="871f1baf-d1fa-4505-af4e-06642ab3ae53" class="">Results in MuJoCo</h1><figure id="726de293-a863-4a03-a3e4-c02d0c22ba33"><div class="source"><a href="Learn%20what%20matters%20cross-domain%20imitation%20learning%20d34e0ce0671f48c6bbca8ba34a65e24c/Gym_results.mov">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6fb40dfb-dbd1-4ca2-96da-ac2aafc8594f/Gym_results.mov</a></div></figure><p id="3b34484c-e1c0-4da5-ae81-01b1456cf4a2" class="">
-</p><h1 id="2b4cd055-a851-4df0-8cc9-d22f6ec347de" class="">Code</h1><figure id="8ca00d37-3ea8-440f-afcd-2559cc975f13"><div class="source">https://github.com/fratim/udil-code</div></figure><p id="3cdfed99-ea0a-4a92-98a3-dda3ed210a65" class="">
+where other methods fail.
+</p><h1 id="871f1baf-d1fa-4505-af4e-06642ab3ae53" class="">Results in XMagical</h1>
+<video controls="controls" width="800" name="Video Name">
+	<source src="https://fratim.github.io/UDIL/Learn%20what%20matters%20cross-domain%20imitation%20learning%20d34e0ce0671f48c6bbca8ba34a65e24c/XIRL_results.mov">
+</video>
+</p><h1 id="871f1baf-d1fa-4505-af4e-06642ab3ae53" class="">Results in MuJoCo</h1>
+<video controls="controls" width="800" name="Video Name">
+	<source src="https://fratim.github.io/UDIL/Learn%20what%20matters%20cross-domain%20imitation%20learning%20d34e0ce0671f48c6bbca8ba34a65e24c/Gym_results.mov">
+</video>
+</p><h1 id="871f1baf-d1fa-4505-af4e-06642ab3ae53" class="">Code</h1>
+<a href="https://github.com/fratim/udil-code">Github repository</a>
 </p></div></article></body></html>
 
-
-<script>
-    var videos = document.getElementsByClassName("source");
-    for (var i = 0; i < videos.length; i++) {
-        var source = videos[i].getElementsByTagName("a");
-        if (source[0].href.includes("youtube")) {
-            var videoObject = document.createElement('iframe');
-            videoObject.src = source[0].href.replace("watch?v=", "embed/");
-            videos[i].style.padding = "0";
-            videoObject.style.width = "100%";
-            videos[i].append(videoObject);
-            source[0].remove();
-        } else {
-            var videoObject = document.createElement('video');
-            videos[i].style.padding = "0";
-            videoObject.src = source[0].href;
-            videoObject.controls = true;
-            videoObject.style.width = "100%";
-            videos[i].append(videoObject);
-            source[0].remove();
-        }
-    }
-</script>
